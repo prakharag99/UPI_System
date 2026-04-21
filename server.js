@@ -63,6 +63,7 @@ app.post("/users", (req, res) => {
 
 app.post("/users/:id/add-balance", (req, res) => {
 
+    // need to do parseint as id comes as string, so convert to int
     const userId = parseInt(req.params.id);
     const {amount} = req.body;
 

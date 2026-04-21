@@ -24,4 +24,4 @@ EXPOSE 3000
 
 # Start the APP:
 
-CMD ["node", "server.js"]
+CMD ["npx", "nodemon", "--legacy-watch", "server.js"]
